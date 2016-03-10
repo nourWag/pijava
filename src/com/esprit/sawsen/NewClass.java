@@ -10,5 +10,5 @@ package com.esprit.sawsen;
  * @author nour
  */
 public class NewClass {
-    
+    int i;
 }
