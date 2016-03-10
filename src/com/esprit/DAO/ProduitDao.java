@@ -190,6 +190,7 @@ public class ProduitDao implements IProduitDao {
             System.out.println("erreur lors du chargement des Produits " + ex.getMessage());
             return null;
         }}
+    @Override
          public List<Produit> getAllByKey(String text) {
         String requete = "select * from produit where (marque LIKE '%" + text + "%' or designation LIKE '%" + text + "%' or reference LIKE '%" + text + "%')";
         List<Produit> listeagentskey = new ArrayList<Produit>();

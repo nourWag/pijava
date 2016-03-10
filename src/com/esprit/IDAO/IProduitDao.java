@@ -28,5 +28,6 @@ public interface IProduitDao {
     Produit findProduitById(int id);
 
     Produit findProduitByCouleur(String reference);
+    List<Produit> getAllByKey(String text);
 
 }
