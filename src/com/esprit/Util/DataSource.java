@@ -29,6 +29,7 @@ public class DataSource {
     private Connection connection;
     private Properties properties;
     private static DataSource instance;
+    private String name;
 
     private DataSource() {
         try {
