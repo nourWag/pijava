@@ -1,9 +1,6 @@
 package com.esprit.GUI;
-
 import javax.swing.ImageIcon;
 import javax.swing.UIManager;
-
-
 /**
  *
  * @author pc
@@ -89,13 +86,14 @@ public class Page_resp_1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
-//    ImageIcon i =new ImageIcon(getClass().getResource("/Icon/gerer2_btn.png"));
-//      jButton1.setIcon(i);
+    ImageIcon i =new ImageIcon(getClass().getResource("/Icon/gerer2_btn.png"));
+      jButton1.setIcon(i);
     }//GEN-LAST:event_jButton1MouseEntered
 
     private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
-//        ImageIcon i =new ImageIcon(getClass().getResource("/Icon/gerer_btn.png"));
-//      jButton1.setIcon(i);
+        ImageIcon i =new ImageIcon(getClass().getResource("/Icon/gerer_btn.png"));
+      jButton1.setIcon(i);
+       // System.out.println("getClass().getResource(\"/Icon/gerer_btn.png\"");
     }//GEN-LAST:event_jButton1MouseExited
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -103,21 +101,21 @@ public class Page_resp_1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseEntered
-//        ImageIcon i =new ImageIcon(getClass().getResource("/Icon/produit2.png"));
-//      jButton2.setIcon(i);
+        ImageIcon i =new ImageIcon(getClass().getResource("/Icon/produit2.png"));
+      jButton2.setIcon(i);
     }//GEN-LAST:event_jButton2MouseEntered
 
     private void jButton2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseExited
-//        ImageIcon i =new ImageIcon(getClass().getResource("/Icon/produit1.png"));
-//      jButton2.setIcon(i);
+        ImageIcon i =new ImageIcon(getClass().getResource("/Icon/produit1.png"));
+      jButton2.setIcon(i);
     }//GEN-LAST:event_jButton2MouseExited
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
     Page_resp_2 es=new Page_resp_2(); //nom de la classe
         es.setVisible(true);
-//        es.setSize(1308,566);
-//        es.setLocationRelativeTo(null);
-//        es.setVisible(true);
+        es.setSize(1308,566);
+        es.setLocationRelativeTo(null);
+        es.setVisible(true);
         this.setVisible(false);  
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -155,12 +153,10 @@ public class Page_resp_1 extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-          
-//                Page_resp_1 es=new Page_resp_1();
-//                es.setSize(1308,566);
-//                es.setLocationRelativeTo(null);
-//                es.setVisible(true);
-                new Page_resp_1().setVisible(true);
+          Page_resp_1 es=new Page_resp_1();
+                es.setSize(1308,566);
+                es.setLocationRelativeTo(null);
+                es.setVisible(true);
             
             }
         });
