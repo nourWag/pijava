@@ -9,6 +9,7 @@ import javax.swing.UIManager;
  *
  * @author pc
  */
+
 public class Page_resp_2 extends javax.swing.JFrame {
     /**
      * Creates new form DisplayBoutique
