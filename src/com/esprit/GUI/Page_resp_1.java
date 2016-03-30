@@ -3,16 +3,17 @@ package com.esprit.GUI;
 import javax.swing.ImageIcon;
 import javax.swing.UIManager;
 
+
 /**
  *
  * @author pc
  */
-public class Respensable_page extends javax.swing.JFrame {
+public class Page_resp_1 extends javax.swing.JFrame {
 
     /**
      * Creates new form Respensable_page
      */
-    public Respensable_page() {
+    public Page_resp_1() {
         initComponents();
     }
 
@@ -27,7 +28,8 @@ public class Respensable_page extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -44,10 +46,33 @@ public class Respensable_page extends javax.swing.JFrame {
                 jButton1MouseExited(evt);
             }
         });
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 255, 63));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/resp2.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/produit1.png"))); // NOI18N
+        jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButton2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButton2MouseExited(evt);
+            }
+        });
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 255, 63));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/resp2.png"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -64,14 +89,37 @@ public class Respensable_page extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
-    ImageIcon i =new ImageIcon(getClass().getResource("/Icon/gerer2_btn.png"));
-      jButton1.setIcon(i);
+//    ImageIcon i =new ImageIcon(getClass().getResource("/Icon/gerer2_btn.png"));
+//      jButton1.setIcon(i);
     }//GEN-LAST:event_jButton1MouseEntered
 
     private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
-        ImageIcon i =new ImageIcon(getClass().getResource("/Icon/gerer_btn.png"));
-      jButton1.setIcon(i);
+//        ImageIcon i =new ImageIcon(getClass().getResource("/Icon/gerer_btn.png"));
+//      jButton1.setIcon(i);
     }//GEN-LAST:event_jButton1MouseExited
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseEntered
+//        ImageIcon i =new ImageIcon(getClass().getResource("/Icon/produit2.png"));
+//      jButton2.setIcon(i);
+    }//GEN-LAST:event_jButton2MouseEntered
+
+    private void jButton2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseExited
+//        ImageIcon i =new ImageIcon(getClass().getResource("/Icon/produit1.png"));
+//      jButton2.setIcon(i);
+    }//GEN-LAST:event_jButton2MouseExited
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    Page_resp_2 es=new Page_resp_2(); //nom de la classe
+        es.setVisible(true);
+//        es.setSize(1308,566);
+//        es.setLocationRelativeTo(null);
+//        es.setVisible(true);
+        this.setVisible(false);  
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -91,32 +139,37 @@ public class Respensable_page extends javax.swing.JFrame {
                  UIManager.setLookAndFeel("com.jtattoo.plaf.acryl.AcrylLookAndFeel");
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Respensable_page.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Page_resp_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Respensable_page.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Page_resp_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Respensable_page.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Page_resp_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Respensable_page.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Page_resp_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-         
-                Respensable_page es=new Respensable_page();
-                es.setSize(1308,566);
-                es.setLocationRelativeTo(null);
-                es.setVisible(true);
+          
+//                Page_resp_1 es=new Page_resp_1();
+//                es.setSize(1308,566);
+//                es.setLocationRelativeTo(null);
+//                es.setVisible(true);
+                new Page_resp_1().setVisible(true);
+            
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
