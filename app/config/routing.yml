@@ -1,0 +1,19 @@
+myappuser:
+    resource: "@MyappuserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+myapp_responsable:
+    resource: "@MyappResponsableBundle/Resources/config/routing.yml"
+    prefix:   /
+
+myappadmin:
+    resource: "@MyappadminBundle/Resources/config/routing.yml"
+    prefix:   /
+
+piwebapp:
+    resource: "@piwebappBundle/Resources/config/routing.yml"
+    prefix:   /
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+    
+   
