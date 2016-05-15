@@ -1,4 +1,3 @@
-
 package com.esprit.entites;
 
 /**
@@ -10,6 +9,7 @@ public class images {
     private String Name;
     private String Description;
     private byte[] Image;
+    private Boutique boutique;
 
     public images() {
     }
@@ -19,6 +19,14 @@ public class images {
         this.Name = Name;
         this.Description = Description;
         this.Image = Image;
+    }
+
+    public Boutique getBoutique() {
+        return boutique;
+    }
+
+    public void setBoutique(Boutique boutique) {
+        this.boutique = boutique;
     }
 
     public String getID() {

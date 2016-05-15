@@ -17,6 +17,7 @@ public class Boutique {
     private String numero_telephone;
     private String Email;
     private String promotion;
+    private String Description;
     public Boutique() {
     }
 
@@ -35,7 +36,7 @@ public class Boutique {
         this.categorie = categorie;
     }
 
-    public Boutique(int id, String nom, String categorie, String Fax, String numero_telephone, String Email, String promotion) {
+    public Boutique(int id, String nom, String categorie, String Fax, String numero_telephone, String Email, String promotion, String Description) {
         this.id = id;
         this.nom = nom;
         this.categorie = categorie;
@@ -43,7 +44,10 @@ public class Boutique {
         this.numero_telephone = numero_telephone;
         this.Email = Email;
         this.promotion = promotion;
+        this.Description = Description;
     }
+
+ 
 public Boutique(String nom, String categorie, String Fax, String numero_telephone, String Email, String promotion) {
         this.nom = nom;
         this.categorie = categorie;
@@ -113,6 +117,14 @@ public Boutique(String nom, String categorie, String Fax, String numero_telephon
 
     public void setPromotion(String promotion) {
         this.promotion = promotion;
+    }
+
+    public String getDescription() {
+        return Description;
+    }
+
+    public void setDescription(String Description) {
+        this.Description = Description;
     }
   
     

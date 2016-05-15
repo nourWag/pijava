@@ -1,6 +1,6 @@
 package com.esprit.adapters;
 import com.esprit.entites.Boutique;
-import com.esprit.IDAO.BoutiqueDao;
+import com.esprit.DAO.BoutiqueDao;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.table.AbstractTableModel;
@@ -10,7 +10,8 @@ import javax.swing.table.AbstractTableModel;
  * @author pc
  */
 public class BoutiqueAdapter extends AbstractTableModel{
-    String[] headers = {"id", "nom", "categorie", "Fax", "numero_telephone", "Email", "promotion"};
+    //String[] headers = {"id", "nom", "categorie", "Fax", "numero_telephone", "Email", "promotion","Description"};
+     String[] headers = {"id", "nom", "categorie"};
     List<Boutique> stocks = new ArrayList<>();
     BoutiqueDao stockDAO;
 
@@ -43,14 +44,16 @@ stocks = allByKey;
                 return stocks.get(rowIndex).getNom();
             case 2:
                 return stocks.get(rowIndex).getCategorie();
-            case 3:
-                return stocks.get(rowIndex).getFax();
-            case 4:
-                return stocks.get(rowIndex).getNumero_telephone(); 
-            case 5:
-                return stocks.get(rowIndex).getEmail();
-            case 6:
-                return stocks.get(rowIndex).getPromotion();
+//            case 3:
+//                return stocks.get(rowIndex).getFax();
+//            case 4:
+//                return stocks.get(rowIndex).getNumero_telephone(); 
+//            case 5:
+//                return stocks.get(rowIndex).getEmail();
+//            case 6:
+//                return stocks.get(rowIndex).getPromotion();
+//            case 7:
+//                return stocks.get(rowIndex).getDescription();
             default:
                 return null;
         }
