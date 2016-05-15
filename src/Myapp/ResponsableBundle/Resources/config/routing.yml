@@ -1,3 +1,0 @@
-myapp_responsable_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: MyappResponsableBundle:Default:index }
