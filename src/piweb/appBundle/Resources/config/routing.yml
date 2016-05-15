@@ -1,3 +1,0 @@
-piwebapp_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: piwebappBundle:Default:index }
